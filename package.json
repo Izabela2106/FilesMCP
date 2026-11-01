@@ -1,0 +1,29 @@
+{
+  "name": "files-manipulation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MCP filesystem sandbox for natural-language file operations",
+  "type": "module",
+  "bin": {
+    "files-manipulation-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "start:dist": "npm run build && node dist/index.js",
+    "agent": "tsx src/agent/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
+    "@modelcontextprotocol/server-filesystem": "^2.1.0",
+    "dotenv": "^18.0.9",
+    "openai": "^7.47.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
