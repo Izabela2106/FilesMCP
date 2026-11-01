@@ -93,6 +93,13 @@ Status: **complete**
 - [x] SHA-256 checksum after agent edit; re-check before keep/revert
 - [x] On mismatch, prompt: keep agent / restore original / keep disk
 
+### 10-vitest-suite — Automated tests
+
+Status: **complete**
+
+- [x] Vitest (`npm test`) — 40 tests
+- [x] Coverage: tools, agent edit/delete confirmation, checksum conflicts, path traversal, delete rules
+
 ## Next Steps
 
 _(none)_

@@ -12,8 +12,11 @@
     "start": "tsx src/index.ts",
     "start:dist": "npm run build && node dist/index.js",
     "agent": "tsx src/agent/index.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
+
   "dependencies": {
     "@modelcontextprotocol/server": "^2.4.0",
     "@modelcontextprotocol/server-filesystem": "^2.1.0",
@@ -24,6 +27,7 @@
   "devDependencies": {
     "@types/node": "^26.6.6",
     "tsx": "^4.23.15",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
   }
 }

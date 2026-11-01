@@ -118,9 +118,11 @@ context/             # specs and progress notes
 | Script | Purpose |
 |--------|---------|
 | `npm run agent` | Interactive OpenRouter agent |
-| `npm start` | MCP server on `workspace/` via tsx |
+| `npm start` | MCP server via tsx (sandbox from `.env`) |
 | `npm run build` | Compile TypeScript → `dist/` |
 | `npm run typecheck` | `tsc --noEmit` |
+| `npm test` | Run Vitest suite |
+| `npm run test:watch` | Vitest watch mode |
 
 ## Model
 
